@@ -1,0 +1,30 @@
+
+# env:
+#      - CLOUDQA_API_KEY="MPzTXks8vUKo0/at0yExuMZ0DqH+Nd+1/xybvc4pdiI=" CLOUDQA_SUITE_ID=2226 CLOUDQA_BROWSER=Chrome CLOUDQA_VARIABLES="var1=val1,var2=val2" CLOUDQA_BUILD_TAG="CLI more information Test" CLOUDQA_BASE_URL="http://the-internet.herokuapp.com" RUN_SEQUENTIALLY=1#- task: CmdLine@2
+#  inputs:
+#    script: |
+#      sudo apt-get update
+#      
+#      sudo apt-get install -y jq
+
+# - task: Bash@3
+#  inputs:
+#    filePath: 'https://doc.cloudqa.io/files/cloudqa-bash.sh'
+# production with environment https://cquserfiles.s3.amazonaws.com/5066/665857ca352e401491d344cda98c0849/cloudqa-app-travisci.sh
+
+
+env:
+     - CLOUDQA_API_KEY="Xs0yDZuD1jCGJPuJDCdNEfBfgy6cCLvztrW9lWomkPo=" CLOUDQA_SUITE_ID=5453 CLOUDQA_BROWSER=Chrome CLOUDQA_VARIABLES="adminversion=3.3.11,Build=2021.165.3.725 fe9c935" CLOUDQA_BASE_URL="http://demo.pulseid.ca"  
+
+language: bash
+
+before_script:
+    - sudo apt-get update && sudo apt-get install -y jq
+    
+# first for production second for stage
+    - curl -O https://cquserfiles.s3.amazonaws.com/5066/2f83516109de49578b0de948f3b74eaf/cloudqa-app-travisci.sh
+
+
+script: 
+    - bash cloudqa-app-travisci.sh
+
