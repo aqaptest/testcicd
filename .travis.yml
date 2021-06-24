@@ -14,7 +14,7 @@
 
 
 env:
-     - CLOUDQA_API_KEY="Xs0yDZuD1jCGJPuJDCdNEfBfgy6cCLvztrW9lWomkPo=" CLOUDQA_SUITE_ID=5453 CLOUDQA_BROWSER=Chrome CLOUDQA_VARIABLES="adminversion=Version: 3.3.11Build: 2021.165.3.725 fe9c935Date: 2021-06-14" CLOUDQA_BASE_URL="http://demo.pulseid.ca"  
+     - CLOUDQA_API_KEY="Xs0yDZuD1jCGJPuJDCdNEfBfgy6cCLvztrW9lWomkPo=" CLOUDQA_SUITE_ID=5453 CLOUDQA_BROWSER=Chrome CLOUDQA_VARIABLES="adminversion=3.3.11" CLOUDQA_BASE_URL="http://demo.pulseid.ca"  
 
 language: bash
 
