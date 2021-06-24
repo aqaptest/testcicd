@@ -11,4 +11,4 @@ before_script:
 
 
 script: 
-    - bash cloudqa-app-travisci.sh
+    - bash cloudqa-app-travisci.sh 
