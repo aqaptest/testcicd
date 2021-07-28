@@ -1,7 +1,6 @@
 env:
      - CLOUDQA_API_KEY="Xs0yDZuD1jCGJPuJDCdNEfBfgy6cCLvztrW9lWomkPo=" CLOUDQA_SUITE_ID=5453 CLOUDQA_BROWSER=Chrome CLOUDQA_VARIABLES="adminversion=3.3.11,buildversion=2021.165.3.725 fe9c935"
 language: bash
-
 before_script:
     - sudo apt-get update && sudo apt-get install -y jq
     
