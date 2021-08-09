@@ -6,10 +6,14 @@ language: bash
 before_script:
     - sudo apt-get update && sudo apt-get install -y jq
     
-# first for production second for stage
-    - curl -O https://cquserfiles.s3.amazonaws.com/5066/2f83516109de49578b0de948f3b74eaf/cloudqa-app-travisci.sh
+    
+ # first for stage second for production  
+  - curl -O https://cquserfiles.s3.amazonaws.com/6387/4d7ae5e832154790839981eb2de6fc27/cloudqa-app-travisci.sh
+  
+# first for stage second for production 
+# - curl -O https://cquserfiles.s3.amazonaws.com/5066/2f83516109de49578b0de948f3b74eaf/cloudqa-app-travisci.sh
 
 
 script: 
-    - bash cloudqa-stage-travisci.sh 
+    - bash cloudqa-app-travisci.sh 
 
