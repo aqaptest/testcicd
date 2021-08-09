@@ -1,11 +1,14 @@
 env:
-     - CLOUDQA_API_KEY="xnEQ+zH5M+1kTXzHf2xLxRk7XW5/Yx2OZf31kmTJchU=" CLOUDQA_SUITE_ID=103 CLOUDQA_BROWSER=Firefox
+     - CLOUDQA_API_KEY="YDr2GUDqQvQFjcYmB48dHRchcYZ8jwJnO6UwhcnY+U4=" CLOUDQA_SUITE_ID=5744 CLOUDQA_BROWSER=Firefox
 
 language: bash
 
 before_script:
     - sudo apt-get update && sudo apt-get install -y jq
-    - curl -O https://cquserfiles.s3.amazonaws.com/6387/9f0402e7af0e4cc1b66a6aced0092ae9/cloudqa-app-travisci.sh
+    # - curl -O https://cquserfiles.s3.amazonaws.com/6387/9f0402e7af0e4cc1b66a6aced0092ae9/cloudqa-app-travisci.sh
+    
+    # first for stage second for production 
+    - curl -O https://cquserfiles.s3.amazonaws.com/5066/2f83516109de49578b0de948f3b74eaf/cloudqa-app-travisci.sh
      
 script: 
     - bash cloudqa-app-travisci.sh 
