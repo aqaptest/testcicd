@@ -1,6 +1,6 @@
 env:
      - CLOUDQA_API_KEY="rKAN2ZIyUQDZLgL27E2oRmP5/uw4mZv4o7raYhQC+xE=" CLOUDQA_SUITE_ID=103
- CLOUDQA_BROWSER=Chrome CLOUDQA_BUILD_TAG=122 CLOUDQA_VARIABLES="adminversion=3.3.11,buildversion=2021.165.3.725 fe9c935"
+ CLOUDQA_BROWSER=Chrome CLOUDQA_VARIABLES="adminversion=3.3.11,buildversion=2021.165.3.725 fe9c935"
 
 language: bash
 before_script:
@@ -11,5 +11,5 @@ before_script:
 
 
 script: 
-    - bash cloudqa-app-travisci.sh 
+    - bash cloudqa-stage-travisci.sh 
 
