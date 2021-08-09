@@ -1,6 +1,7 @@
 env:
-     - CLOUDQA_API_KEY=xnEQ+zH5M+1kTXzHf2xLxRk7XW5/Yx2OZf31kmTJchU= CLOUDQA_SUITE_ID=103
- CLOUDQA_BROWSER=Chrome CLOUDQA_VARIABLES="adminversion=3.3.11,buildversion=2021.165.3.725 fe9c935"
+     - CLOUDQA_API_KEY="xnEQ+zH5M+1kTXzHf2xLxRk7XW5/Yx2OZf31kmTJchU="
+     - CLOUDQA_SUITE_ID=103
+     - CLOUDQA_BROWSER=Chrome
 
 language: bash
 
