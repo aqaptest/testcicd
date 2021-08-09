@@ -8,7 +8,7 @@ before_script:
     
     
  # first for stage second for production  
-  - curl -O https://cquserfiles.s3.amazonaws.com/6387/4d7ae5e832154790839981eb2de6fc27/cloudqa-app-travisci.sh
+  - curl -O https://devcquserfiles.s3.amazonaws.com/173/6b31375b8baa4d54abf68e3b5b2fa67b/cloudqa-app-travisci.sh
   
 # first for stage second for production 
 # - curl -O https://cquserfiles.s3.amazonaws.com/5066/2f83516109de49578b0de948f3b74eaf/cloudqa-app-travisci.sh
