@@ -1,11 +1,11 @@
 env:
-     - CLOUDQA_API_KEY="qWQgvZqigeMry9q9b4AKIU8jarQTK6JCgtI4aIMDCiA=" CLOUDQA_SUITE_ID=77 CLOUDQA_BROWSER=Chrome CLOUDQA_BUILD_TAG="1.0"
+     - CLOUDQA_API_KEY="xnEQ+zH5M+1kTXzHf2xLxRk7XW5/Yx2OZf31kmTJchU=" CLOUDQA_SUITE_ID=135 CLOUDQA_BROWSER=Chrome CLOUDQA_BUILD_TAG="1.0"
 
 language: bash
 
 before_script:
     - sudo apt-get update && sudo apt-get install -y jq
-    - curl -O https://devcquserfiles.s3.amazonaws.com/96/c067174ecd0b46ca8453c5a7eeb11a40/cloudqa-app-travisci.sh
+    - curl -O https://cquserfiles.s3.amazonaws.com/6387/9f0402e7af0e4cc1b66a6aced0092ae9/cloudqa-app-travisci.sh
     # stage
     # - curl -O https://cquserfiles.s3.amazonaws.com/6387/9f0402e7af0e4cc1b66a6aced0092ae9/cloudqa-app-travisci.sh
     
